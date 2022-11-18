@@ -12,10 +12,9 @@ namespace FizzBuzz
     public class FizzBuzzerTest
     {
 
-     
-        [TestCase(3, "Fizz")]
-        [TestCase(6, "Fizz")]
-        [TestCase(123,"Fizz")]
+
+        [TestCase(1, "1")]
+
         [TestCase(5, "Buzz")]
         [TestCase(20, "Buzz")]
         [TestCase(200, "Buzz")]
@@ -54,12 +53,23 @@ namespace FizzBuzz
             if (num % 5 == 0 && num % 7 == 0)
                 return "BuzzPop";
 
+            if (num % 2 == 0 && num % 3 == 0)
+                return "FuzzBizz";
+
             if (num % 3 == 0) 
-            return "Fizz";
+            return "Bizz";
+
             if (num % 5 == 0)
                 return "Buzz";
             if (num % 7 == 0)
                 return "Pop";
+            
+            if (num % 2 == 0)
+                return "fuzz";
+
+
+            if (num == 1)
+                return "1";
 
             return "";
         }
