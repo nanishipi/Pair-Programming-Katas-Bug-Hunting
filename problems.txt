@@ -1,0 +1,8 @@
+problem 1 : for dimentions he should use different variables, othervise its always turn true.
+
+problem 2 : delete [], you cannot do that when you re not returning an array.
+
+problem 3 :
+
+problem 4 : there is no input being decleared or passed as a paramater
+
