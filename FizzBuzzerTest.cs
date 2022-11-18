@@ -12,7 +12,7 @@ namespace FizzBuzz
     public class FizzBuzzerTest
     {
 
-        [TestCase(1, 1)]
+     
         [TestCase(3, "Fizz")]
         [TestCase(6, "Fizz")]
         [TestCase(123,"Fizz")]
@@ -21,7 +21,6 @@ namespace FizzBuzz
         [TestCase(200, "Buzz")]
         [TestCase(15, "FizzBuzz")]
         [TestCase(45, "FizzBuzz")]
-        [TestCase(315, "FizzBuzz")]
         [TestCase(7, "Pop")]
         [TestCase(28, "Pop")]
         [TestCase(77, "Pop")]
