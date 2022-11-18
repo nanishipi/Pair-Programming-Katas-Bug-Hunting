@@ -1,4 +1,4 @@
-problem 1 : for dimentions he should use different variables, othervise its always turn true.
+problem 1 : other.bounds[j+1] is out of bounds the condition will always be false
 
 problem 2 : delete [], you cannot do that when you re not returning an array.
 
