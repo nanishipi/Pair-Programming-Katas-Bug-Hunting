@@ -72,7 +72,7 @@ namespace FizzBuzz
                 return "Pop";
             
             if (num % 2 == 0)
-                return "fuzz";
+                return "Fuzz";
 
 
             if (num == 1)
