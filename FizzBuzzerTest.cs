@@ -11,24 +11,34 @@ namespace FizzBuzz
     [TestFixture]
     public class FizzBuzzerTest
     {
-        [TestCase(1,1)]
-        [TestCase(2, 2)]
-        [TestCase(4, 4)]
-      
-       
 
-
-        public void GetOutput_WhenCalled(int num, int res)
+        [TestCase(1, 1)]
+        [TestCase(3, "Fizz")]
+        [TestCase(6, "Fizz")]
+        [TestCase(123,"Fizz")]
+        [TestCase(5, "Buzz")]
+        [TestCase(20, "Buzz")]
+        [TestCase(200, "Buzz")]
+        [TestCase(15, "FizzBuzz")]
+        [TestCase(45, "FizzBuzz")]
+        [TestCase(315, "FizzBuzz")]
+        public void GetOutput_WhenCalled(int num, string res)
         {
             // a simple example to start you off
-            Assert.AreEqual(num, FizzBuzz1(res));
+            Assert.AreEqual(res, FizzBuzz2(num));
         }
 
 
-        public static int FizzBuzz1(int res)
-        {
-            return res;
+       private string FizzBuzz2(int num)
+       {
+            if (num %3 == 0 && num % 5 == 0)
+                return "FizzBuzz";
+            if (num % 3 == 0) 
+            return "Fizz";
+            if (num % 5 == 0)
+                return "Buzz";
 
+            return "";
         }
 }
 }
