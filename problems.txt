@@ -2,7 +2,21 @@ problem 1 : other.bounds[j+1] is out of bounds the condition will always be fals
 
 problem 2 : delete [], you cannot do that when you re not returning an array.
 
-problem 3 :
+problem 3 : LOG.warning is not exist.
 
 problem 4 : there is no input being decleared or passed as a paramater
 
+problem 5 :
+
+problem 6 : value -1 cannot be converted to byte
+
+problem 7: LOGGER its not exist.
+
+problem 8:
+
+problem 9: rgsToRead is decleared as a boolean in first if loop rgsToRead.length try to equalize ix.
+
+problem 10: Second switch-case is out of scope. "i" is going 1024 and 0x0822 is 2082.
+
+extra : processedData == that.processedData &&
+(we should add "that.")
