@@ -12,7 +12,7 @@ namespace FizzBuzz
     public class FizzBuzzerTest
     {
 
-   
+        [TestCase(1, 1)]
         [TestCase(3, "Fizz")]
         [TestCase(6, "Fizz")]
         [TestCase(123,"Fizz")]
@@ -22,6 +22,19 @@ namespace FizzBuzz
         [TestCase(15, "FizzBuzz")]
         [TestCase(45, "FizzBuzz")]
         [TestCase(315, "FizzBuzz")]
+        [TestCase(7, "Pop")]
+        [TestCase(28, "Pop")]
+        [TestCase(77, "Pop")]
+        [TestCase(21, "FizzPop")]
+        [TestCase(63, "FizzPop")]
+        [TestCase(126, "FizzPop")]
+        [TestCase(35, "BuzzPop")]
+        [TestCase(70, "BuzzPop")]
+        [TestCase(140, "BuzzPop")]
+        [TestCase(105, "FizzBuzzPop")]
+        [TestCase(210, "FizzBuzzPop")]
+        [TestCase(315, "FizzBuzzPop")]
+
         public void GetOutput_WhenCalled(int num, string res)
         {
             // a simple example to start you off
@@ -31,12 +44,23 @@ namespace FizzBuzz
 
        private string FizzBuzz2(int num)
        {
+            if (num % 5 == 0 && num % 7 == 0 && num % 3 == 0)
+                return "FizzBuzzPop";
+
             if (num %3 == 0 && num % 5 == 0)
                 return "FizzBuzz";
+            if (num % 3 == 0 && num % 7 == 0)
+                return "FizzPop";
+
+            if (num % 5 == 0 && num % 7 == 0)
+                return "BuzzPop";
+
             if (num % 3 == 0) 
             return "Fizz";
             if (num % 5 == 0)
                 return "Buzz";
+            if (num % 7 == 0)
+                return "Pop";
 
             return "";
         }
