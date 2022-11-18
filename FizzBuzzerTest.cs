@@ -32,6 +32,13 @@ namespace FizzBuzz
         [TestCase(105, "FizzBuzzPop")]
         [TestCase(210, "FizzBuzzPop")]
         [TestCase(315, "FizzBuzzPop")]
+        
+        [TestCase(2, "Fuzz")]
+        [TestCase(8, "Fuzz")]
+        [TestCase(4, "Fuzz")]
+        
+        [TestCase(9, "Bizz")]
+        [TestCase(12, "FuzzBizz")]
 
         public void GetOutput_WhenCalled(int num, string res)
         {
